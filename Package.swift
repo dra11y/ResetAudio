@@ -3,17 +3,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "ResetAudio",
+    name: "WakeAudio",
     platforms: [.macOS(.v10_15)],
     products: [
         .library(
-            name: "ResetAudio",
-            targets: ["ResetAudio"]),
+            name: "WakeAudio",
+            targets: ["WakeAudio"]),
     ],
     targets: [
         .target(
-            name: "ResetAudio",
-            path: "Sources/ResetAudio",
+            name: "WakeAudio",
+            path: "Sources/WakeAudio",
             publicHeadersPath: ".",
             cSettings: [
                 .headerSearchPath(".")
